@@ -29,7 +29,8 @@ notebook/
 ├── Section 6  - Volume Analysis
 ├── Section 7  - Multi-Stock Comparison
 ├── Section 8  - Fundamental Metrics
-└── Section 9  - Summary Scorecard
+├── Section 9  - Summary Scorecard
+└── Section 10 - Backtesting
 ```
 
 ---
@@ -37,7 +38,7 @@ notebook/
 ## What This Project Covers
 
 | Section | What it answers |
-|---|---|
+| --- | --- |
 | Returns | How much did the stock make? When were the wild days? |
 | Volatility | How risky was it to hold? How does that compare to the market? |
 | Technical Indicators | What is the trend, momentum, and volatility signal? |
@@ -45,6 +46,7 @@ notebook/
 | Comparison | How did it perform vs peers and the S&P 500? |
 | Fundamentals | Is the business behind the stock actually healthy? |
 | Scorecard | What does everything say together? |
+| Backtesting | Does the SMA crossover signal actually generate returns? |
 
 ---
 
@@ -84,6 +86,10 @@ notebook/
 ----------------------------------------------------
   OVERALL VERDICT   : Bullish - multiple indicators aligned
 ----------------------------------------------------
+```
+
+```
+For AAPL over 2022–2024, a passive buy-and-hold strategy outperformed a mechanical SMA crossover strategy. This is consistent with the broader literature showing simple trend-following struggles in mean-reverting or strongly trending single stocks.
 ```
 
 ---

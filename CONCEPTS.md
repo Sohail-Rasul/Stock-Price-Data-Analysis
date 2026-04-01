@@ -197,3 +197,49 @@ Growth = (This Year - Last Year) / Last Year x 100
 ```
 - Both rising = healthy growth
 - Revenue up, net income flat = margin pressure
+
+---
+
+## Backtesting
+
+**What it is**
+Testing a trading strategy on historical data to see if it would have made money.
+Not a guarantee of future performance, but a disciplined way to evaluate a signal.
+
+**Look-Ahead Bias**
+The most common backtesting mistake. If you use today's crossover signal to trade
+today, you're cheating — in reality you only see the close after the market shuts.
+We fix this by shifting signals forward by 1 day.
+```
+Position_today = Signal_yesterday
+```
+
+**Strategy Return**
+```
+Strategy_Return = Daily_Return × Position
+```
+When Position = 1 (holding), you capture the market's return.
+When Position = 0 (out), your return is 0.
+
+**Sharpe Ratio**
+Risk-adjusted return. How much return did you earn per unit of risk taken?
+```
+Sharpe = (Mean Daily Return / Std Daily Return) × sqrt(252)
+```
+* Above 1.0 = decent
+* Above 2.0 = strong
+* sqrt(252) scales from daily to annual (252 trading days per year)
+
+**Max Drawdown**
+The largest peak-to-trough loss during the period. The number that answers:
+"At its worst, how much would I have lost?"
+```
+Drawdown = (Cumulative_Value - Rolling_Peak) / Rolling_Peak
+Max Drawdown = min(Drawdown)
+```
+
+**Annualised Return**
+Converts total return into a per-year figure so different time periods can be compared.
+```
+Annualised Return = (1 + Total Return) ^ (1 / n_years) - 1
+```
