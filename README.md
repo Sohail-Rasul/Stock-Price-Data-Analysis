@@ -100,7 +100,7 @@ To analyse a different stock, change the ticker symbol in Cell 2.
 
 ## A Note on Process
 
-Code in this project was developed with AI assistance (Claude).
+Code in this project was developed with AI assistance.
 The concepts, analysis framework, and explanations are my own,
 built by working through each indicator, understanding the maths
 behind it, and learning how to read and interpret the outputs.
