@@ -88,9 +88,9 @@ notebook/
 ----------------------------------------------------
 ```
 
-```
+
 For AAPL over 2022–2024, a passive buy-and-hold strategy outperformed a mechanical SMA crossover strategy. This is consistent with the broader literature showing simple trend-following struggles in mean-reverting or strongly trending single stocks.
-```
+
 
 ---
 
